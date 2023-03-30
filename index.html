@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Andrés Fuentes Galán</title>
+	<link rel="stylesheet" href="site.css">
+	<link rel="icon" type="image/x-icon" href="/Imágenes/logo Kmikc.e.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+		<nav>
+			<img class="logo" src="./Imágenes/logo Kmikc.e.png" alt="logo">
+			<p class="hola">Kmikc.e</p>
+			<a href="#Ilustraciones">Ilustraciones</a>
+			<a href="#Identidad">Identidad Visual</a>
+			<a href="#Animacion">Animación</a>
+			<a href="#Contactos">Contactos</a>
+		</nav>
+
+		<section class="ilustraciones" id="Ilustraciones">
+			<div class="header">
+				<p>Ilustraciones</p>
+			  </div>
+			<div class="row">
+				<div class="column">
+				  <img src="./Imágenes/naipe español.jpg">
+				  <img src="./Imágenes/obey.png">
+				  
+				</div>
+				<div class="column">
+				  <img src="./Imágenes/diseño editorial.jpg">
+				  <img src="./Imágenes/deriva.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="identidad" id="Identidad">
+			<div class="header">
+				<p>Identidad Visual</p>
+			  </div>
+			<div class="row">
+				<div class="column">
+				  <img src="./Imágenes/make love.jpg">
+				  <img src="./Imágenes/durum cycle.jpg">
+				</div>
+
+
+				<div class="column">
+				  <img src="./Imágenes/chachas.jpg">
+				  <img src="./Imágenes/tahona.jpg">
+				</div>
+				
+				<div class="column">
+				  <img src="./Imágenes/kafele.jpg">
+				  <img src="./Imágenes/yawata.jpg">
+				</div>
+
+			</div>
+		</section>
+		
+		<section class="animacion" id="Animacion">
+			<div class="header">
+				<p>Animacion</p>
+			</div>
+			<video controls poster="./Imágenes/the office 2.jpg">
+				<source src="./vídeo/OPENING THE OFFICE.mp4" type="video/mp4">
+			</video>
+		</section>
+
+		<section class="contacto" id="Contactos">
+			<div class="header">
+				<p>Contactos</p>
+			</div>
+			<form action="https://formsubmit.co/andresfuentesgdg19@alumnos.eade.es" method="post">
+				<div class="detalles">
+					<input type="text" name = "name" placeholder = "Nombre"required>
+					<input type="email" name="email" placeholder="Correo" required>
+					<input type="text" name= "telefono" placeholder="Teléfono">
+					<input type="text" name="_subject" placeholder="Asunto" required>
+					<textarea name="mensaje" placeholder="Mensaje" style="height:200px"></textarea>
+				</div>
+				<div class = "aceptar">
+				<label for="aceptar">
+				<input type="checkbox" id="aceptar" value="second_checkbox" required> 
+				 He leído y acepto las condiciones de uso y la Política de privacidad
+				<span class="checkmark"></span>
+				</label>
+				</div>
+				<div class = "boton"><button type="submit">Enviar</button></div>
+			</form>
+		</section>
+</body>
+<footer>
+	<p>&copy; 2022 Andrés Fuentes Galán</p>
+</footer>
+</html>
