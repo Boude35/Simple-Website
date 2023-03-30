@@ -1,0 +1,286 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1 rem;
+
+}
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  padding: 5%;
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 10;
+}
+
+nav .logo {
+        max-width: 15%;
+        padding: 3%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+    padding: 5%;
+    padding-bottom: 0.5% !important;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 25%;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+nav .hola{
+    font-weight: bold;
+}
+    
+@media screen and (max-width: 800px) {
+        a {
+            display: none !important;
+        }
+        nav{
+            justify-content: left !important;
+        }
+        p{
+            font-size: 1.5rem !important;
+        }
+        footer p{
+            font-size: small !important;
+        }
+}
+
+@media screen and (min-width: 800px) {
+    nav .hola {
+        display: none !important;
+    }
+}
+
+section{
+    margin-top: 3%;
+}
+
+.identidad{
+    padding: 3% 10% 3% 10%;
+}
+.identidad .header{
+    padding-left: 6px;
+    margin-bottom: 1%;
+        
+}
+
+.identidad p{
+        font-size: 3em;
+}
+
+.identidad .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+}
+    
+    /* Create four equal columns that sits next to each other */
+.identidad .column {
+        flex: 1 1 32%;
+        padding: 0 4px;
+}
+    
+.identidad .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+}
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+        .identidad .column {
+        flex: 33%;
+        max-width: 33%;
+        }
+}
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+        .identidad .column {
+        flex: 100%;
+        max-width: 100%;
+        }
+}
+
+
+.ilustraciones{
+    padding: 3% 10% 3% 10%;
+}
+.ilustraciones .header{
+    padding-left: 6px;
+    margin-bottom: 1%;
+}
+.ilustraciones p{
+    font-size: 3em;
+}
+    
+.ilustraciones .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+}
+        
+        /* Create four equal columns that sits next to each other */
+.ilustraciones .column {
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 4px;
+}
+        
+.ilustraciones .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+}
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+        .ilustraciones .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+}
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+        .ilustraciones .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+        .detalles {
+            padding: 0 !important;
+        }
+
+        .detalles > * {
+            padding: 5% !important;
+        }
+
+        .boton{
+            padding: 0 !important;
+        }
+
+        .aceptar{
+            font-size: small !important;
+        }
+}
+
+video{
+    width: 100% !important;
+    height: auto !important;
+
+}
+
+.animacion{
+    padding: 3% 10% 3% 10%;
+}
+
+
+.animacion p{
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+
+.contacto header{
+    margin-bottom: 1%;
+}
+
+.contacto{
+    padding: 3% 10% 3% 10%;
+    font-size: 3em;
+}
+
+.contacto .detalles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input, textarea{
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+    font-weight: bold !important;
+    margin: 2%;
+    resize: none;
+}
+
+.detalles{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 10% 3% 10%;
+
+}
+
+.detalles > * {
+    flex: 1 1 45%;
+    border: hidden;
+    padding: 2%;
+}
+
+.aceptar{
+    text-align: center;
+    font-size: medium;
+}
+
+.boton{
+    padding: 0% 10% 3% 10%;
+}
+
+button{
+    padding: 1% 0% 1% 0%;
+    letter-spacing: 0.5em;
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-transform: uppercase;
+    border: hidden;
+}
+
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    color: gray;
+    font-weight: 100;
+    font-size: 1 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+
+}
